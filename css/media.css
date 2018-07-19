@@ -361,6 +361,9 @@
     right: 0;
     margin: auto;
   }
+  .sheme-img-cont1.arrow-down:before {
+   left: -33px;
+  }
   .sheme-img-cont1 img {
     width: 31px;
     height: 35px;
@@ -381,6 +384,13 @@
   .sheme-img-cont4 img {
     width: 45px;
     height: 27px;
+
+  }
+  .label-head {
+    margin-left: 18px;
+  }
+  .sheme-img-cont4 {
+    margin-left: -12px !important;
   }
   .sheme-img-cont5 img {
     width: 75px;
