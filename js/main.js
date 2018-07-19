@@ -1,8 +1,10 @@
+
 $('.roll-down').click(function(){
-  $(this).siblings('.PC-hidden').css('display', 'block');
-  $(this).siblings('.hidden-cont').css('display', 'block');
+  $(this).parent().siblings('.hidden-cont').addClass('inline');
+  $(this).parent().css('display', 'none');
   return false;
 });
+
 $('.leave-button').click(function(){
   $('.popup').addClass('rollup-visible');
   $('.leave-form').fadeIn(1000);
@@ -32,7 +34,22 @@ if($(window).width() <= 1200) {
   B.replaceWith(A);
   c.replaceWith(d.clone());
   d.replaceWith(c);
+
+  $('.slick-slider ').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    //centerMode: true,
+    easing: 'swing', // see http://api.jquery.com/animate/
+    speed: 700,
+    dots: true
+    //количество слайдов, которые перелистываются за один раз
+  });
 }
+$('.roll-down-pc').click(function(){
+  $(this).siblings('.PC-hidden').addClass('inline');
+  $(this).css('display', 'none');
+});
 $('.burger-menu').click(function(){
   $('.mobile-menu').toggleClass('menu-opened');
 });
+

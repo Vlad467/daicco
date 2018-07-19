@@ -63,8 +63,6 @@ body {
   color: #fff;
   font-family: 'Proxima Nova light';
   overflow-x: hidden;
-
-
 }
 ul li {
   list-style: none;
@@ -78,6 +76,9 @@ a {
 }
 button:hover, a:hover {
   cursor: pointer;
+}
+button, a {
+  outline: 0;
 }
 .clearfix {
   overflow: auto;
@@ -380,6 +381,7 @@ color: #3782e9;
   transform: translateX(-50%);
 
 }
+
 .token-col h4:after {
   content: '';
   position: absolute;
@@ -1187,6 +1189,7 @@ position: relative;
   /* Text style for "К, омпания" */
   letter-spacing: 0.9px;
 }
+
 .footer .clearfix {
   overflow: visible;
 }
@@ -1496,4 +1499,5 @@ label {
 .diaram-mobi-text, .diag3-mobi-text {
   display: none;
 }
+
 
