@@ -81,7 +81,7 @@ button, a {
   outline: 0;
 }
 .clearfix {
-  overflow: auto;
+  overflow: hidden;
 }
 .clearfix::after {
   content: "";
@@ -199,6 +199,8 @@ color: #3782e9;
   background-image: linear-gradient(to top, #004ea3 0%, #2d91ff 99%, #2d91ff 100%), linear-gradient(to top, #242b47 0%, #181d33 100%);
   border: none;
   color: #fff;
+  position: relative;
+  z-index: 50;
 }
 .ticket:hover,.pager:hover {
   background-image: -o-radial-gradient(circle 232px at 56.15% 56.93%, #2d91ff 0%, #2d91ff 1%, #004ea3 100%), -o-linear-gradient( top, #242b47 0%, #181d33 100%);
@@ -439,7 +441,7 @@ text-align: center;
   color: #7ab1fb;
 
 }
-.roll-down {
+.roll-down, .roll-down-pc {
   position: relative;
   display: inline-block;
   left: 50%;
@@ -456,7 +458,7 @@ text-align: center;
   margin-top: 10px;
   font-family: 'ProximaNova-Regular';
 }
-.roll-down:after {
+.roll-down:after, .roll-down-pc:after {
   content: '';
   display: block;
   border-top: 1px solid #3b8eff;
@@ -468,7 +470,7 @@ text-align: center;
   height: 6px;
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
-}.roll-down:before {
+}.roll-down:before, .roll-down-pc:before {
   content: '';
   position: absolute;
   left: 0;
@@ -489,7 +491,7 @@ text-align: center;
  .PC-hidden {
    display: none;
  }
-.roll-down:hover:after,.roll-down:hover:before {
+.roll-down:hover:after,.roll-down:hover:before, .roll-down-pc:hover:after, .roll-down-pc:hover:after {
   border-color: #7ab1fb;
 
 }
@@ -849,6 +851,7 @@ position: relative;
 .team {
   padding-top: 106px;
   position: relative;
+  z-index: 2;
 }
 .team-cont {
   padding-top: 12px;

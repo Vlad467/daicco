@@ -157,6 +157,7 @@
 
   .problem-block {
     float: none;
+    padding-right: 40px;
   }
 
   .problem-block:first-of-type {
@@ -238,7 +239,7 @@
 
   .token {
     width: 100%;
-    margin: 0 auto;
+    margin: 90px auto 0;
     background: url(../img/triangle.png) -440px 0px no-repeat;
   }
 
@@ -770,7 +771,7 @@
   .cell {
     width: 320px;
     margin: 0 auto;
-    background: url(../img/cell.png) 30px -52px no-repeat;
+    background: url(../img/cell-mobi.png) 0px 175px no-repeat;
     padding-top: 104px;
   }
 

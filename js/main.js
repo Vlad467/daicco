@@ -8,7 +8,7 @@ $('.roll-down').click(function(){
 $('.leave-button').click(function(){
   $('.popup').addClass('rollup-visible');
   $('.leave-form').fadeIn(1000);
- /* $('body').addClass('overflow-y'); */
+  $('body').addClass('overflow-y');
 });
 $('.close').click(function(){
   $('.application').fadeOut(500);
@@ -23,7 +23,7 @@ $('.close').click(function(){
 $('.enroll-button').click(function(){
 $('.popup').addClass('rollup-visible');
 $('.enroll').fadeIn(1000);
-/* $('body').addClass('overflow-y'); */
+ $('body').addClass('overflow-y');
  });
 if($(window).width() <= 1200) {
   var A = $('.token-block1');
@@ -46,10 +46,19 @@ if($(window).width() <= 1200) {
   });
 }
 $('.roll-down-pc').click(function(){
-  $(this).siblings('.PC-hidden').addClass('inline');
+  $(this).siblings('.PC-hidden').css('display','block');
   $(this).css('display', 'none');
 });
 $('.burger-menu').click(function(){
   $('.mobile-menu').toggleClass('menu-opened');
+});
+$(document).mouseup(function (e) {
+  var container = $(".application");
+  if (container.has(e.target).length === 0){
+    container.fadeOut(500);
+      $('.popup').fadeOut(600).removeClass('rollup-visible');
+      $('body').removeClass('overflow-y');
+
+  }
 });
 
