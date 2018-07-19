@@ -938,10 +938,20 @@ position: relative;
   margin: 189px auto 0;
   width: 1175px;
   height: 662px;
-  background: url(../img/video-img.png) center no-repeat;
+ /* background: url(../img/video-img.png) center no-repeat; */
   position: relative;
+
 }
 .video-img-cont img {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.video-img-cont iframe {
   position: absolute;
   display: block;
   left: 0;

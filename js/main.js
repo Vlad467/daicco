@@ -25,7 +25,7 @@ $('.popup').addClass('rollup-visible');
 $('.enroll').fadeIn(1000);
  $('body').addClass('overflow-y');
  });
-if($(window).width() <= 1200) {
+if($(window).width() <= 600) {
   var A = $('.token-block1');
   var B = $('.token-block2');
   var c = $('.h2-token1');

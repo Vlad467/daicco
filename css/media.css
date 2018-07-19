@@ -1,4 +1,4 @@
-@media only screen and (max-width:980px) {
+@media only screen and (max-width:600px) {
   .layout {
     width: 320px;
     margin: 0 auto;
@@ -1390,4 +1390,388 @@ margin-top: -37px;}
   .enroll p {
     margin-left: 0;
   }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .layout {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .screen1 {
+    position: relative;
+    z-index: 100;
+  }
+
+  .top-menu {
+    position: relative;
+  }
+
+  .logo, .menu, .lang-menu {
+    float: none;
+  }
+
+  .top-menu {
+
+  }
+
+  .burger-menu {
+    width: 31px;
+    height: 25px;
+    position: absolute;
+    right: 24px;
+    top: 50px;
+    z-index: 989999;
+  }
+
+  .burger-menu:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  .burger-menu span {
+    width: 100%;
+    display: block;
+    height: 3px;
+    background: #fff;
+    margin-bottom: 8px;
+  }
+
+  .burger-menu span:last-child {
+    margin: 0;
+  }
+
+  .screen1 h2 {
+    width: 100%;
+    margin: 120px auto 150px;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.27px;
+  }
+
+  .screen1 h2 span:after {
+    height: 0;
+  }
+
+  .screen1 .ticket, .screen1 .pager {
+    position: relative;
+    margin: auto auto 21px;
+    width: 276px;
+  }
+
+  .screen1 .pager {
+    margin-left: 20px;
+    margin-bottom: 150px;
+  }
+
+  .logo, .menu, .lang-menu {
+    float: none;
+    margin-top: 0px;
+  }
+
+  .logo {
+    margin-left: 26px;
+  }
+
+  .top-menu {
+    padding-top: 29px;
+  }
+
+  .menu {
+    margin-left: auto;
+    margin-right: auto;
+
+    line-height: 2;
+  }
+
+  .lang-menu {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .mobile-menu {
+    top: -1000px;
+    padding-top: 120px;
+    position: absolute;
+    background: #03081f;
+    width: 600px;
+    z-index: 99999;
+    padding-bottom: 20px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
+  .logo {
+    position: relative;
+    z-index: 199999;
+  }
+
+  .menu-opened {
+    top: 0;
+  }
+
+  .lang-menu a {
+    margin-left: 30px;
+
+  }
+
+  .menu {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .menu a {
+    margin-left: auto;
+    display: block;
+    text-align: center;
+  }
+
+  .menu a:nth-child(3) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu a:nth-child(5) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu a:first-of-type, .lang-menu a:first-of-type {
+    margin-left: auto;
+  }
+
+  .problem {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    padding: 41px 26px;
+  }
+
+  .problem-block {
+    float: none;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .problem-block:first-of-type {
+    width: 600px;
+    margin-bottom: 100px;
+  }
+
+  .problem-block h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    text-align: center;
+  }
+
+  .problem-block p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: 0.9px;
+
+  }
+
+  .problem-block:nth-child(2) {
+    width: 600px;
+    margin-left: 0px;
+
+  }
+
+  .screen2 {
+    background: url(../img/map.png) -540px 750px no-repeat;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .map-block p {
+    width: 600px;
+  }
+
+  .map-block:first-of-type {
+    margin-bottom: 150px;
+  }
+
+  .token .shadow-title {
+    font-size: 169px
+  }
+
+  .token-col {
+    float: none;
+  }
+
+  .token-block {
+    width: 600px
+  }
+
+  .screen-diagrams .shadow-title {
+    font-size: 71px;
+    line-height: 120px;
+  }
+
+  .token-diagram1 {
+    width: 600px;
+  }
+
+  .token-diagram {
+    float: none;
+  }
+
+  .token-diagram1 .diag-text {
+    left: 320px;
+  }
+
+  .token-diagram {
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  .token-diagram:last-child {
+    margin-bottom: 50px;
+  }
+
+  .token-diagram2 {
+    background-size: 105%;
+    width: 600px;
+  }
+
+  .diag-text {
+    font-size: 16px;
+  }
+
+  .token-diagram2 .diag-text1 {
+    top: 245px;
+    left: 22px
+  }
+
+  .token-diagram2 .diag-text2 {
+    top: 156px;
+
+    left: 30px
+  }
+
+  .token-diagram2 .diag-text3 {
+    left: 73px;
+  }
+
+  .token-diagram2 .diag-text4 {
+    left: 330px;
+  }
+
+  .token-diagram2 .diag-text5 {
+    left: 356px;
+    top: 125px;
+  }
+
+  .token-diagram2 .diag-text6 {
+    left: 493px;
+  }
+
+  .token-diagram2 .diag-text7 {
+    top: 348px
+  }
+
+  .one-diagram .shadow-title {
+    line-height: 89.01px;
+    font-size: 74px;
+  }
+  .diagram3 {
+    width: 600px;
+    height: 614px;
+    margin: 13px auto 0px;
+    background-size: contain;
+  }
+  .diagram3 .diag-text {
+    font-size: 13px;
+  }
+  .diagram3 .diag-text1 {
+    top: 401px;
+    left: 18px;
+  }
+  .diagram3 .diag-text2 {
+    top: 205px;
+    left: 105px
+  }
+  .diagram3 .diag-text3 {
+    left: 94px;
+
+    top: 105px;
+  }
+  .diagram3 .diag-text4 {
+    top: 97px;
+
+    left: 357px;
+  }
+  .diagram3 .diag-text5 {
+    left: 512px;
+
+    top: 183px;
+  }
+  .diagram3 .diag-text6 {
+    left: 435px;
+
+    top: 445px;
+  }
+  .one-diagram {
+
+    background: url(../img/light.png) center -50px no-repeat;
+
+  }
+  .cell {
+    width: 600px;
+  }
+  .diagram-desc-block2 .ticket {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .h2-info {
+    margin-bottom: 40px;
+  }
+  .team img, .team p {
+
+    float: none;
+  }
+  .team-cont img {
+
+    margin-left: 0px;
+    margin-top: -12px;
+  }
+    .team ul {
+      position: relative;
+
+      left: 50%;
+
+      margin-top: 50px;
+
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 500px;
+      text-align: center;
+    }
 }
