@@ -902,10 +902,8 @@
 
   .video-img-cont {
     margin: 77px auto 0;
-    /* Style for "maxresdefa" */
     width: 320px;
     height: 370px;
-    background: url(../img/video-img.png) center no-repeat;
     background-size: cover;
     position: relative;
   }
@@ -1123,7 +1121,6 @@ margin-top: -37px;}
     height: 2111px;
     width: 331px;
     background: url(../img/perspective-mob.png);
-    content: url(../img/perspective-mob.png);
   }
 
   .perspective {
@@ -1279,43 +1276,90 @@ margin-top: -37px;}
   }
 
   .application {
-    display: none;
-    width: 612px;
-    height: 770px;
-    background-color: #020820;
-    background-image: -o-linear-gradient(-150deg, #ab001e 0%, #0e3386 68%, #0e3386 100%);
-    background-image: -moz-linear-gradient(-150deg, #ab001e 0%, #0e3386 68%, #0e3386 100%);
-    background-image: -webkit-linear-gradient(-150deg, #ab001e 0%, #0e3386 68%, #0e3386 100%);
-    background-image: linear-gradient(-150deg, #ab001e 0%, #0e3386 68%, #0e3386 100%);
-    padding-top: 58px;
-    padding-left: 56px;
-    padding-right: 52px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 196px;
+    width: 320px;
+    height: auto;
+    padding-left: 12px;
+    padding-right: 12px;
   }
-
-
-
-  .enroll {
-    padding: 58px 0 0;
+  .application h2 {
+    margin-left: auto;
+    text-align: center;
+  }
+  label {
+    font-size: 17px;
+  }
+  .application .radio {
+    margin-right: 13px;
+  }
+  .input-inline {
     display: block;
-    width: 612px;
+    margin-top: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+  }
+  .comment {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .close {
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    background: url(../img/clos.png) center no-repeat;
+    right: 5px;
+    top: 5px;
+  }
+  .enroll {
+    padding: 58px 12px 12px;
+    width: 320px;
     height: auto;
   }
-
+  .enroll h2 {
+    font-size: 42px;
+  }
+  .enroll .ticket {
+    left: 250px;
+  }
+  .enroll p {
+    margin-left: -55px;
+  }
   .enroll form {
-    padding: 0 0 0 63px;
+    padding: 0;
   }
-
   .enroll .who {
-    margin-left: 100px;
+    margin-left: 33px;
   }
-
   .enroll .input-inline1 {
     margin-right: 25px;
+  }
+  .select {
+    text-align: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .select2 {
+    margin-left: -48px;
+  }
+
+
+  .comment input {
+    /* Style for "btn копия" */
+    width: 242px;
+  }
+  .input-inline1 {
+    margin-right: auto;
+
+  }
+  .input-problem2 {
+    margin-right: 0 !important;
   }
   .screen2:after {
     width: 0;
@@ -1327,7 +1371,13 @@ margin-top: -37px;}
   .slider-cont {
     margin-bottom: 92px;
   }
+  .enroll .ticket {
+    left: 150px;
+  }
   .inline {
     display: inline;
+  }
+  .enroll p {
+    margin-left: 0;
   }
 }
