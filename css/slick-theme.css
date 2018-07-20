@@ -6,7 +6,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 45%;
 
     display: block;
 
@@ -63,16 +63,10 @@
 .slick-prev
 {
     left: -25px;
-    top: 40%;
-    background: url(../img/slide-arrow.png) center no-repeat;
+    background: url(../img/slider-left.png) center no-repeat;
     width: 19px;
     height: 57px;
-    position: absolute;
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    transform: rotate(-180deg);
+
 }
 [dir='rtl'] .slick-prev
 {
@@ -226,5 +220,16 @@
     .slick-next
     {
         right:-10px;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1170px) {
+    .slick-prev
+    {
+        left:-15px;
+        z-index: 100;
+    }
+    .slick-next
+    {
+        right:-15px;
     }
 }

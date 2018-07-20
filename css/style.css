@@ -62,7 +62,10 @@ body {
   background: #000828;
   color: #fff;
   font-family: 'Proxima Nova light';
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+html {
+  overflow-x: hidden !important;
 }
 ul li {
   list-style: none;

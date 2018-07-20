@@ -2681,6 +2681,7 @@ margin-top: -37px;}
   .news .clearfix {
     overflow: visible;
   }
+
   .slider .slide {
     float: none;
     -webkit-box-shadow: none;
@@ -3037,6 +3038,7 @@ margin-top: -37px;}
     width: 980px;
     margin-bottom: 100px;
   }
+
   .slider-cont {
     margin-bottom: 100px;
   }
@@ -3047,6 +3049,10 @@ margin-top: -37px;}
 
     box-shadow: none;
   }
+  .news .shadow-title {
+    font-size: 150px;
+  }
+
 }
 @media only screen and (max-width: 1160px) {
   .slider .slide {
