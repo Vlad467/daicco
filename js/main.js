@@ -35,7 +35,7 @@ if($(window).width() <= 600) {
   c.replaceWith(d.clone());
   d.replaceWith(c);
 
-  $('.slick-slider ').slick({
+  /*$('.slick-slider ').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     //centerMode: true,
@@ -43,7 +43,7 @@ if($(window).width() <= 600) {
     speed: 700,
     dots: true
     //количество слайдов, которые перелистываются за один раз
-  });
+  });*/
 }
 $('.roll-down-pc').click(function(){
   $(this).parent().find('.PC-hidden').css('display','block');
@@ -89,7 +89,7 @@ $('.video-img-cont img').click(function(){
   $('.video-img-cont iframe').click();
 });
 
-if($(window).width() <= 980) {
+/*if($(window).width() <= 980) {
   if($(window).width() >= 600) {
   $('.slick-slider ').slick({
     slidesToShow: 2,
@@ -113,5 +113,33 @@ if($(window).width() <= 1170) {
       //количество слайдов, которые перелистываются за один раз
     });
   }
+}*/
+if($(window).width() <= 1170) {
+  $('.slick-slider ').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    //centerMode: true,
+    easing: 'swing', // see http://api.jquery.com/animate/
+    speed: 700,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+    //количество слайдов, которые перелистываются за один раз
+  });
 }
-
