@@ -950,6 +950,7 @@ position: relative;
   top: 0;
   bottom: 0;
   margin: auto;
+  z-index:10;
 }
 .video-img-cont iframe {
   position: absolute;
@@ -959,6 +960,7 @@ position: relative;
   top: 0;
   bottom: 0;
   margin: auto;
+  z-index: 8;
 }
 .video-img-cont img:hover {
   cursor: pointer;
@@ -1181,16 +1183,18 @@ position: relative;
   width: 1170px;
   margin: 77px auto 110px;
 }
-.slider img {
+.slider .slide {
   margin-left: 28px;
+  margin-bottom: 28px;
   display: block;
   float: left;
   -webkit-box-shadow:0 31px 79px rgba(0, 0, 0, 0.2);
   -moz-box-shadow:0 31px 79px rgba(0, 0, 0, 0.2);
   box-shadow: 0 31px 79px rgba(0, 0, 0, 0.2);
 }
-.slider img:first-of-type {
-  margin-left: 0px;
+
+.slider.clearfix {
+  overflow: visible;
 }
 .footer {
   background-color: #03081e;
@@ -1309,7 +1313,8 @@ position: relative;
   letter-spacing: 0.48px;
   margin-bottom: 38px;
 }
-.application h3 {
+.application h3, .h3 {
+  display: block;
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.24px;
@@ -1511,6 +1516,39 @@ label {
 }
 .diaram-mobi-text, .diag3-mobi-text {
   display: none;
-}
 
+}
+.thanks {
+  display: none;
+  padding-top:71px;
+  top: 198px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  z-index: 9999999;
+  width: 609px;
+  height: 334px;
+  background-color: #020820;
+  background-image: -o-linear-gradient(-150deg, #ab001e 0%, #0e3386 68%, #0e3386 100%);
+  background-image: -moz-linear-gradient(-150deg, #ab001e 0%, #0e3386 68%, #0e3386 100%);
+  background-image: -webkit-linear-gradient(-150deg, #ab001e 0%, #0e3386 68%, #0e3386 100%);
+  background-image: linear-gradient(-150deg, #ab001e 0%, #0e3386 68%, #0e3386 100%);
+}
+.thanks h3 {
+
+  font-weight: 500;
+  /* Text style for "С, пасибо!" */
+  font-size: 48px;
+  letter-spacing: 0.48px;
+}
+.thanks p {
+  font-size: 24px;
+  letter-spacing: 0.24px;
+}
+.thanks .text {
+  width: 402px;
+  margin: 0 auto;
+}
 

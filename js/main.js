@@ -11,7 +11,7 @@ $('.leave-button').click(function(){
   $('body').addClass('overflow-y');
 });
 $('.close').click(function(){
-  $('.application').fadeOut(500);
+  $('.application, .thanks').fadeOut(500);
   setTimeout(
       function(){
         $('.popup').removeClass('rollup-visible');
@@ -46,7 +46,8 @@ if($(window).width() <= 600) {
   });
 }
 $('.roll-down-pc').click(function(){
-  $(this).siblings('.PC-hidden').css('display','block');
+  $(this).parent().find('.PC-hidden').css('display','block');
+  $(this).parent().find('.hidden-dots').css('display','none');
   $(this).css('display', 'none');
 });
 $('.burger-menu').click(function(){
@@ -61,6 +62,22 @@ $(document).mouseup(function (e) {
 
   }
 });
+$(document).mouseup(function (e) {
+  var container = $(".thanks");
+  if (container.has(e.target).length === 0){
+    container.fadeOut(500);
+    $('.popup').fadeOut(600).removeClass('rollup-visible');
+    $('body').removeClass('overflow-y');
+
+  }
+});
+$('.thanks-button').click(function() {
+  $('.thanks').fadeIn(500);
+  setTimeout(function(){
+    $('.thanks').fadeOut(500);
+  }, 3000);
+  return false;
+});
 $(".menu").on("click","a", function (event) {
 //отменяем стандартную обработку нажатия по ссылке
   event.preventDefault();
@@ -74,4 +91,33 @@ $(".menu").on("click","a", function (event) {
 //анимируем переход на расстояние - top за 1500 мс
   $('body,html').animate({scrollTop: top}, 1500);
 });
+$('.video-img-cont img').click(function(){
+  $('.video-img-cont iframe').click();
+});
+
+if($(window).width() <= 980) {
+  if($(window).width() >= 600) {
+  $('.slick-slider ').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    //centerMode: true,
+    easing: 'swing', // see http://api.jquery.com/animate/
+    speed: 700,
+    dots: true
+    //количество слайдов, которые перелистываются за один раз
+  });
+  }
+}
+if($(window).width() <= 1170) {
+  if($(window).width() >= 980) {
+    $('.slick-slider ').slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      easing: 'swing', // see http://api.jquery.com/animate/
+      speed: 700,
+      dots: true
+      //количество слайдов, которые перелистываются за один раз
+    });
+  }
+}
 
