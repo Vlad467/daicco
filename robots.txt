@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /en/
+Disallow: /ua/
+
+User-agent: *
+Disallow: /en/
+Disallow: /ua/
