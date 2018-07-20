@@ -2107,10 +2107,11 @@ margin-top: -37px;}
   -moz-box-shadow:none;
   box-shadow: none;
 }
-.slick-slide {
-  margin-right: 20px;
-  margin-left: 20px;
-}
+  .slider .slide {
+
+    margin-left: 12px;
+    margin-right: 12px;
+  }
 
 
 }
@@ -2686,9 +2687,10 @@ margin-top: -37px;}
     -moz-box-shadow:none;
     box-shadow: none;
   }
-  .slick-slide {
-    margin-right: 20px;
-    margin-left: 20px;
+  .slider .slide {
+
+    margin-left: 12px;
+    margin-right: 12px;
   }
   .news .shadow-title {
     font-size: 109px;

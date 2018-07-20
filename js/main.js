@@ -93,7 +93,7 @@ if($(window).width() <= 980) {
   if($(window).width() >= 600) {
   $('.slick-slider ').slick({
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     //centerMode: true,
     easing: 'swing', // see http://api.jquery.com/animate/
     speed: 700,
