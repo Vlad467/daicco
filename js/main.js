@@ -8,14 +8,14 @@ $('.roll-down').click(function(){
 $('.leave-button').click(function(){
   $('.popup').addClass('rollup-visible');
   $('.leave-form').fadeIn(1000);
-  $('body').addClass('overflow-y');
+  $('body, html').addClass('overflow-y');
 });
 $('.close').click(function(){
   $('.application, .thanks').fadeOut(500);
   setTimeout(
       function(){
         $('.popup').removeClass('rollup-visible');
-        $('body').removeClass('overflow-y');
+        $('body,html').removeClass('overflow-y');
       }, 600
   );
 
