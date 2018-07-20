@@ -3052,6 +3052,9 @@ margin-top: -37px;}
   .news .shadow-title {
     font-size: 150px;
   }
+  .team p:after {
+    right: -40px;
+  }
 
 }
 @media only screen and (max-width: 1160px) {
