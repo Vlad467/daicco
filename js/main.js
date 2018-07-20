@@ -114,7 +114,7 @@ if($(window).width() <= 1170) {
     });
   }
 }*/
-if($(window).width() <= 1170) {
+if($(window).width() < 1170) {
   $('.slick-slider ').slick({
     slidesToShow: 3,
     slidesToScroll: 3,

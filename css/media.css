@@ -1397,6 +1397,9 @@ margin-top: -37px;}
   .enroll p {
     margin-left: 0;
   }
+  .country {
+    margin-left: 25px;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .layout {
@@ -2119,7 +2122,9 @@ margin-top: -37px;}
   .layout {
     width: 768px;
   }
-
+ .info-icon {
+    display: none;
+  }
   .menu a {
     margin-left: 0px;
     font-size: 16px;
@@ -2701,7 +2706,9 @@ margin-top: -37px;}
   .layout {
     width: 980px;
   }
-
+  .info-icon {
+    display: none;
+  }
   .menu {
     margin-left: 30px;
     margin-right: 40px;
